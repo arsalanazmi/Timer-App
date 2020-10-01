@@ -1,11 +1,11 @@
 language: node_js
 node_js:
   - "stable"
-
+    
 script:
-  - yarn install
-  - yarn test
-  - yarn run build
+  - npm install
+  - npm test
+  - npm run build
 
 deploy:
   provider: netlify
