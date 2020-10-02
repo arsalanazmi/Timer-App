@@ -9,9 +9,9 @@ script:
 
 deploy:
   provider: netlify
-  skip_cleanup: true
-  domain: https://timer-application.netlify.app/
-  project: ./build/
+  site: https://timer-application.netlify.app/
+  edge: true
+  dir: ./build/
 
 on:
   branch: master
